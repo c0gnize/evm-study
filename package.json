@@ -4,7 +4,8 @@
   "description": "Study EVM",
   "scripts": {
     "compile": "npx hardhat compile",
-    "test": "npm run compile && npx hardhat test"
+    "test": "npm run compile && npx hardhat test",
+    "deploy:local": "npx hardhat run scripts/deploy.ts --network localhost"
   },
   "keywords": [
     "EVM",

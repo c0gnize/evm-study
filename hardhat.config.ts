@@ -33,6 +33,11 @@ const config: HardhatUserConfig = {
     hardhat: {
       chainId: 1337,
     },
+    fantomtest: {
+      url: "https://rpc.testnet.fantom.network",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
